@@ -33,7 +33,7 @@ jobs:
       - name: npm install
         run: |
           cd ~/JavaScript	        
-          git checkout master	        
+           
           npm install
       - name: '运行 【音乐打卡】'
         run: |
