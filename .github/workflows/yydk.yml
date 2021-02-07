@@ -36,7 +36,7 @@ jobs:
           git checkout master	        
           npm install
       - name: '运行 【音乐打卡】'
-       run: |
+        run: |
           cd ~/JavaScript/workflow	
           node yydkziye.js
         env:
