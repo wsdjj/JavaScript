@@ -6,36 +6,41 @@ name: 音乐打卡
 on:
   workflow_dispatch:
   schedule:
-     - cron: '17 8-23 * * *'
+    - cron: '0 */6 * * *'
   watch:
     types: started
+  repository_dispatch:
+    types: huoshan
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    env:
-        dkurlkey: ${{ secrets.dkurlkey }}
-        		  
     steps:
       - name: Checkout
         run: |
           git clone https://github.com/ziye12/JavaScript.git ~/JavaScript
-      - name: Use Node.js 12.x
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
+          node-version: ${{ matrix.node-version }}
+      - name: Cache node_modules
+        uses: actions/cache@v2 # 使用 GitHub 官方的缓存 Action。
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
-        if: env.XL_URL
         run: |
-          cd ~/JavaScript
+          cd ~/TaskAction	        
+          git checkout master	        
           npm install
       - name: '运行 【音乐打卡】'
-        if: env.dkurlkey
-        run: |
-          cd ~/JavaScript
+       run: |
+          cd ~/TaskAction/workflow	
           node yydkziye.js
         env:
-          
+          TZ: Asia/shanghai
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
