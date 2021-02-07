@@ -37,7 +37,6 @@ jobs:
           npm install
       - name: '运行 【音乐打卡】'
         run: |
-          cd ~/JavaScript/workflow	
           node yydkziye.js
         env:
           TZ: Asia/shanghai
