@@ -10,7 +10,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: huoshan
+    types: yydkziye
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,12 +32,12 @@ jobs:
           key: ${{ runner.os }}-${{ env.cache-name }}-${{ hashFiles('package-lock.json') }} # 使用 package-lock.json 的 Hash 作为缓存的 key。也可以使用 package.json 代替
       - name: npm install
         run: |
-          cd ~/TaskAction	        
+          cd ~/JavaScript	        
           git checkout master	        
           npm install
       - name: '运行 【音乐打卡】'
        run: |
-          cd ~/TaskAction/workflow	
+          cd ~/JavaScript/workflow	
           node yydkziye.js
         env:
           TZ: Asia/shanghai
