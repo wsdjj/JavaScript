@@ -43,7 +43,6 @@ jobs:
         env:
           TZ: Asia/shanghai
           yydkurl: ${{ secrets.yydkurl }} 
-          DKURLKEY: ${{ secrets.DKURLKEY }} 
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
