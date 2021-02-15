@@ -42,6 +42,7 @@ jobs:
           node yydkziye.js
         env:
           TZ: Asia/shanghai
+          dkurl: ${{ secrets.dkurl }} 
           DKURLKEY: ${{ secrets.DKURLKEY }} 
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
