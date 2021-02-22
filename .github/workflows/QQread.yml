@@ -1,36 +1,31 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: QQ阅读AP
+name: QQ阅读APP
 
 on:
   workflow_dispatch:
   schedule:
-     - cron: '*/15 * * * *'
+     - cron: '10 0,2,4,6,8 * * *'
   watch:
     types: started
+  repository_dispatch:
+    types: fqkk
+    
 jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
       - name: Checkout
-        run: |
-          git clone https://github.com/wsdjj/JavaScript.git ~/JavaScript
+        uses: actions/checkout@v2
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
       - name: npm install
-        if: env.XP_iboxpayHEADER
         run: |
-          cd ~/JavaScript
           npm install
-      - name: '运行 【QQ阅读AP】'
-        if: env.QQreadurl
+      - name: '运行 【QQ阅读APP】'
         run: |
-          cd ~/JavaScript
-          node QQread.js 
+          node QQread.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
