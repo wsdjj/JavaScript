@@ -80,6 +80,7 @@ http-request ^https:\/\/www\.baimaa\.com\/* script-path= https://raw.githubuserc
 
 
 
+
 const sy = init()//声明必须
 const notifyInterval = 1; //通知开为1，常关为0
 const logs = 0; // 日志开关
