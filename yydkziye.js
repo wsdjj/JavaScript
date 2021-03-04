@@ -92,15 +92,16 @@ const cs = 10;//小程序打卡次数
 const xj = 1;//提现标准
 var tz=''
 
-const dkurlkey = 'yydkurl'+jbid
-const dkurl = sy.getdata(dkurlkey)
+let dkurlkey = 'yydkurl'+jbid
+let dkurl = sy.getdata(dkurlkey)
 
 //const dkurl = https://www.baimaa.com/app/index.php?i=11&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=distribute&m=bh_rising&sign=b9edaf8ccafc71bd0accc3c81330ff32&action=today&contr=index&token=603c4795de8a0b2014e0a01a4dab3545&version=1.0.20
 
 if ($.isNode()) {
 
-   yydkurl = process.env.yydkurl
-  
+  // yydkurl = process.env.yydkurl
+      yydkurlArr.push('https://www.baimaa.com/app/index.php?i=11&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=distribute&m=bh_rising&sign=b9edaf8ccafc71bd0accc3c81330ff32&action=today&contr=index&token=603c4795de8a0b2014e0a01a4dab3545&version=1.0.20') 
+
 
     console.log(`============ 脚本执行-国际标准时间(UTC)：${new Date().toLocaleString()}  =============\n`)
     console.log(`============ 脚本执行-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)
