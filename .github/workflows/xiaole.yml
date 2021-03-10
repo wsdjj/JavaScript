@@ -24,10 +24,9 @@ jobs:
         run: |
           npm install
       - name: '运行 【小乐优券】'
-        if: env.XL_URL
         run: |
          
-          node Task/xiaole.js
+          node xiaole.js
         env:
           
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
