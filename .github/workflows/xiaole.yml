@@ -13,22 +13,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
-    env:
-        XL_URL: ${{ secrets.XL_URL }}
-        XL_HEADER: ${{ secrets.XL_HEADER }}		
-        
     steps:
       - name: Checkout
-        run: |
-          git clone https://github.com/wsdjj/JavaScript.git ~/JavaScript
+        uses: actions/checkout@v2
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
       - name: npm install
-        if: env.XL_URL
         run: |
-         
           npm install
       - name: '运行 【小乐优券】'
         if: env.XL_URL
