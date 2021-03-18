@@ -6,12 +6,12 @@ let iboxpayvideoheaderVal = `{"Content-Length":"168","Connection":"keep-alive","
 let iboxpayvideobodyVal = `{"type":1,"videoList":[{"videoId":"1330758793984864256","type":1,"isFinishWatch":false},{"videoId":"1349789535351881728","type":1,"isFinishWatch":false}],"actId":"324"} `
 
 let iboxpaycookie = {
-  iboxpayvideoheaderVal: iboxpayvideoheaderVal,  
-  refreshtokenVal: refreshtokenVal,  
-  iboxpayvideobodyVal: iboxpayvideobodyVal,
+
+  refreshtokenVal: refreshtokenVal, 
+    iboxpayvideoheaderVal: iboxpayvideoheaderVal,  
+      iboxpayvideobodyVal: iboxpayvideobodyVal,   
+  
 }
 
 module.exports =  iboxpaycookie
   
-
-
