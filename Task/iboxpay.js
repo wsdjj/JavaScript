@@ -156,7 +156,7 @@ if ($.isNode()) {
     // 没有设置 XP_phone 则默认为 0 
     phone = process.env.XP_phone || 0;
     // 没有设置 XP_sms 则默认0  不获取TOKEN
-    sms = process.env.XP_sms || 0
+    sms = process.env.XP_sms || 1 
 
 }
 if ($.isNode() && process.env.XP_refreshTOKEN) {
