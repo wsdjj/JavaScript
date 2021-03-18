@@ -1,3 +1,8 @@
+refreshtokenVal 👉XP_refreshTOKEN	
+	iboxpayvideoheaderVal👉 XP_iboxpayvideoHEADER
+	iboxpayvideobodyVal👉 XP_iboxpayvideoBODY
+	
+
 name: 笑谱
 
 on:
@@ -25,7 +30,7 @@ jobs:
           npm install
       - name: '运行 【笑谱】'
         run: |
-          node Task/iboxpay.js
+          node iboxpay.js
         env:
 
           XP_iboxpayvideoBODY: ${{ secrets. XP_iboxpayvideoBODY }}
@@ -38,3 +43,6 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
+
+
+    
