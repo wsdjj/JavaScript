@@ -27,7 +27,10 @@ jobs:
         run: |
           node Task/iboxpay.js
         env:
-          
+
+          XP_iboxpayvideoBODY: ${{ secrets. XP_iboxpayvideoBODY }}
+          XP_iboxpayvideoHEADER: ${{ secrets. XP_iboxpayvideoHEADER }}
+          XP_refreshTOKEN: ${{ secrets. XP_refreshTOKEN }}
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
@@ -35,5 +38,3 @@ jobs:
           BARK_SOUND: ${{ secrets.BARK_SOUND }}
           DD_BOT_TOKEN: ${{ secrets.DD_BOT_TOKEN }}
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
-
-    
