@@ -1,4 +1,3 @@
-
 name: 笑谱
 
 on:
@@ -29,9 +28,7 @@ jobs:
           node iboxpay.js
         env:
 
-          XP_iboxpayvideoBODY: ${{ secrets. XP_iboxpayvideoBODY }}
-          XP_iboxpayvideoHEADER: ${{ secrets. XP_iboxpayvideoHEADER }}
-          XP_refreshTOKEN: ${{ secrets. XP_refreshTOKEN }}
+  
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
