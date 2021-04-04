@@ -98,7 +98,12 @@ let dkurl = sy.getdata(dkurlkey)
 //const dkurl = https://www.baimaa.com/app/index.php?i=11&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=distribute&m=bh_rising&sign=b9edaf8ccafc71bd0accc3c81330ff32&action=today&contr=index&token=603c4795de8a0b2014e0a01a4dab3545&version=1.0.20
 
 if ($.isNode()) {
-  yydkurl = process.env.yydkurl
+   if (process.env.yydkurl && process.env.yydkurl.indexOf('\n') > -1) {
+   yydkurlArr = process.env.yydkurl.split('\n');
+   console.log(`您选择的是用换行隔开\n`)
+  } else {
+   yydkurlArr = process.env.yydkurl.split()
+  };
   // yydkurl = process.env.yydkurl
     //  yydkurlArr.push('https://www.baimaa.com/app/index.php?i=11&t=0&v=1.0.3&from=wxapp&c=entry&a=wxapp&do=distribute&m=bh_rising&sign=b9edaf8ccafc71bd0accc3c81330ff32&action=today&contr=index&token=603c4795de8a0b2014e0a01a4dab3545&version=1.0.20') 
 
