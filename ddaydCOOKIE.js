@@ -12,7 +12,7 @@ boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs
 
 
 
-let cookie = {"ddaydck":"LF0xPRvX","ddaydck2":"","ddaydck3":"","ddaydck4":"","ddaydck5":"","ddaydck6":"","ddaydck7":"","ddaydck8":"","ddaydck9":"","ddaydck10":"","ddaydck11":"","ddaydck12":"","ddaydck13":"","ddaydck14":"","ddaydck15":"","ddaydck16":"","ddaydck17":"","ddaydck18":"","ddaydck19":"","ddaydck20":""}
+let cookie = {"ddaydck":"LF0xPRvX"}
 
 
 
