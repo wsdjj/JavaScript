@@ -12,7 +12,7 @@ boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs
 
 
 
-let cookie = {"yqnbheader":"BJYADMIN=hf0ih1kr09ff88rnrj892od3l4","yqnbbody":"9299"}
+let cookie = {{"yqnbheader":"BJYADMIN=hf0ih1kr09ff88rnrj892od3l4","yqnbbody":"9299"}}
 
 
 
