@@ -12,7 +12,7 @@ boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs
 
 
 
-let cookie = {"yqnbheader":"BJYADMIN=hf0ih1kr09ff88rnrj892od3l4","yqnbbody":"9299"}
+let cookie = {"yqnbheader":"BJYADMIN=hf0ih1kr09ff88rnrj892od3l4","yqnbbody":"9299","yqnbheader2":"","yqnbbody2":"","yqnbheader3":"","yqnbbody3":"","yqnbheader4":"","yqnbbody4":"","yqnbheader5":"","yqnbbody5":"","yqnbheader6":"","yqnbbody6":"","yqnbheader7":"","yqnbbody7":"","yqnbheader8":"","yqnbbody8":"","yqnbheader9":"","yqnbbody9":"","yqnbheader10":"","yqnbbody10":"","yqnbheader11":"","yqnbbody11":"","yqnbheader12":"","yqnbbody12":"","yqnbheader13":"","yqnbbody13":"","yqnbheader14":"","yqnbbody14":"","yqnbheader15":"","yqnbbody15":"","yqnbheader16":"","yqnbbody16":"","yqnbheader17":"","yqnbbody17":"","yqnbheader18":"","yqnbbody18":"","yqnbheader19":"","yqnbbody19":"","yqnbheader20":"","yqnbbody20":""}
 
 
 
