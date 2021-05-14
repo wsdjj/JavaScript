@@ -1,19 +1,23 @@
-/* ziye
-独立COOKIE文件
-github地址 https://github.com/ziye888
-TG频道地址  https://t.me/ziyescript
-TG交流群   https://t.me/joinchat/AAAAAE7XHm-q1-7Np-tF3g
-boxjs链接  https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye.boxjs.json
-圈X task订阅 https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/ziye-gallery.json
-转载请备注个名字，谢谢
-在boxjs里选择复制会话 粘贴至cookie处
-*/
+//独立COOKIE文件     ck在``里面填写，多账号换行
+let shzxBODYVal = `{
+  "userId" : "609b02dd5e817600017f165d",
+  "os" : "2",
+  "did" : "706d06bb5926b76e95a5c3c525b4eb45",
+  "appName" : "2",
+  "appVersion" : "5.2.3",
+  "token" : "eyJleHAiOjE2Mjg1NDc1NDkzMzAsImlhdCI6MTYyMDc3MTU0OTMzMCwicHAiOiIxMzkxNTIwMDI5NjM5NTE2MTYwQHNvaHUuY29tIiwidGsiOiJiQ2JpbmRIRDBTcWVzbm1FcUo5SUtid0d6MUszNVowaSIsInYiOjB9.FkSiWzHILAAnvChp_1x8nx1Dqkzu5_phKnGgFzEgU2c",
+  "timestamp" : 1620807615896,
+  "sourceType" : 1
+}`
 
 
 
 
-let cookie = {"id":"shzx","name":"搜狐资讯APP","keys":["shzxbody","shzxbody2","shzxbody3","shzxbody4","shzxbody5","shzxbody6","shzxbody7","shzxbody8","shzxbody9","shzxbody10","shzxbody11","shzxbody12","shzxbody13","shzxbody14","shzxbody15","shzxbody16","shzxbody17","shzxbody18","shzxbody19","shzxbody20"],"author":"@ziye","settings":[{"id":"shzxSuffix","name":"当前账号","val":"1","type":"number","desc":"当前抓取ck记录的账号序号，如：1、2、3、"},{"id":"shzxCount","name":"账号个数","val":"1","type":"number","desc":"指定任务最多跑几个账号，根据抓取的账号数据个数来设值"},{"id":"shzxXH","name":"循环获取CK","val":"0","type":"number","desc":"0关闭 1开启,默认关闭"},{"id":"shzxXYZ","name":"执行概率","val":"100","type":"number","desc":"0不执行 可设置0-100,默认百分百"},{"id":"shuqinotifyttt","name":"推送控制","val":"1","type":"number","desc":"0关闭，1推送,默认12点以及23点推送"},{"id":"shuqinotifyInterval","name":"通知控制","val":"2","type":"number","desc":"0关闭，1为 所有通知，2为 12，23 点通知，3为 6，12，18，23 点通知 "},{"id":"shuqiMinutes","name":"推送-通知 分钟控制","val":"10","type":"number","desc":"推送以及通知控制在什么分钟段，可设置0-59,默认0到10"}],"repo":"https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.js","icons":["https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.png","https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.png"],"script":"https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.js","icon":"https://cdn.jsdelivr.net/gh/ziye888/JavaScript@main/Task/shzx.png","favIcon":"mdi-star","favIconColor":"primary","datas":[{"key":"shzxbody","val":"{   \"userId\" : \"609b02dd5e817600017f165d\",   \"os\" : \"2\",   \"did\" : \"706d06bb5926b76e95a5c3c525b4eb45\",   \"appName\" : \"2\",   \"appVersion\" : \"5.2.3\",   \"token\" : \"eyJleHAiOjE2Mjg1NDc1NDkzMzAsImlhdCI6MTYyMDc3MTU0OTMzMCwicHAiOiIxMzkxNTIwMDI5NjM5NTE2MTYwQHNvaHUuY29tIiwidGsiOiJiQ2JpbmRIRDBTcWVzbm1FcUo5SUtid0d6MUszNVowaSIsInYiOjB9.FkSiWzHILAAnvChp_1x8nx1Dqkzu5_phKnGgFzEgU2c\",   \"timestamp\" : 1620807615896,   \"sourceType\" : 1 }"},{"key":"shzxbody2","val":""},{"key":"shzxbody3","val":""},{"key":"shzxbody4","val":""},{"key":"shzxbody5","val":""},{"key":"shzxbody6","val":""},{"key":"shzxbody7","val":""},{"key":"shzxbody8","val":""},{"key":"shzxbody9","val":""},{"key":"shzxbody10","val":""},{"key":"shzxbody11","val":""},{"key":"shzxbody12","val":""},{"key":"shzxbody13","val":""},{"key":"shzxbody14","val":""},{"key":"shzxbody15","val":""},{"key":"shzxbody16","val":""},{"key":"shzxbody17","val":""},{"key":"shzxbody18","val":""},{"key":"shzxbody19","val":""},{"key":"shzxbody20","val":""}],"sessions":[{"id":"bc5b0d05-6679-47b3-9fe9-df12cb94e8ae","name":"会话 1","appId":"shzx","appName":"搜狐资讯APP","enable":true,"createTime":"2021-05-12T07:35:42.183Z","datas":[{"key":"shzxbody","val":"{   \"userId\" : \"609b02dd5e817600017f165d\",   \"os\" : \"2\",   \"did\" : \"706d06bb5926b76e95a5c3c525b4eb45\",   \"appName\" : \"2\",   \"appVersion\" : \"5.2.3\",   \"token\" : \"eyJleHAiOjE2Mjg1NDc1NDkzMzAsImlhdCI6MTYyMDc3MTU0OTMzMCwicHAiOiIxMzkxNTIwMDI5NjM5NTE2MTYwQHNvaHUuY29tIiwidGsiOiJiQ2JpbmRIRDBTcWVzbm1FcUo5SUtid0d6MUszNVowaSIsInYiOjB9.FkSiWzHILAAnvChp_1x8nx1Dqkzu5_phKnGgFzEgU2c\",   \"timestamp\" : 1620807615896,   \"sourceType\" : 1 }"},{"key":"shzxbody2","val":""},{"key":"shzxbody3","val":""},{"key":"shzxbody4","val":""},{"key":"shzxbody5","val":""},{"key":"shzxbody6","val":""},{"key":"shzxbody7","val":""},{"key":"shzxbody8","val":""},{"key":"shzxbody9","val":""},{"key":"shzxbody10","val":""},{"key":"shzxbody11","val":""},{"key":"shzxbody12","val":""},{"key":"shzxbody13","val":""},{"key":"shzxbody14","val":""},{"key":"shzxbody15","val":""},{"key":"shzxbody16","val":""},{"key":"shzxbody17","val":""},{"key":"shzxbody18","val":""},{"key":"shzxbody19","val":""},{"key":"shzxbody20","val":""}]}],"curSession":{"id":"bc5b0d05-6679-47b3-9fe9-df12cb94e8ae","name":"会话 1","appId":"shzx","appName":"搜狐资讯APP","enable":true,"createTime":"2021-05-12T07:35:42.183Z","datas":[{"key":"shzxbody","val":"{   \"userId\" : \"609b02dd5e817600017f165d\",   \"os\" : \"2\",   \"did\" : \"706d06bb5926b76e95a5c3c525b4eb45\",   \"appName\" : \"2\",   \"appVersion\" : \"5.2.3\",   \"token\" : \"eyJleHAiOjE2Mjg1NDc1NDkzMzAsImlhdCI6MTYyMDc3MTU0OTMzMCwicHAiOiIxMzkxNTIwMDI5NjM5NTE2MTYwQHNvaHUuY29tIiwidGsiOiJiQ2JpbmRIRDBTcWVzbm1FcUo5SUtid0d6MUszNVowaSIsInYiOjB9.FkSiWzHILAAnvChp_1x8nx1Dqkzu5_phKnGgFzEgU2c\",   \"timestamp\" : 1620807615896,   \"sourceType\" : 1 }"},{"key":"shzxbody2","val":""},{"key":"shzxbody3","val":""},{"key":"shzxbody4","val":""},{"key":"shzxbody5","val":""},{"key":"shzxbody6","val":""},{"key":"shzxbody7","val":""},{"key":"shzxbody8","val":""},{"key":"shzxbody9","val":""},{"key":"shzxbody10","val":""},{"key":"shzxbody11","val":""},{"key":"shzxbody12","val":""},{"key":"shzxbody13","val":""},{"key":"shzxbody14","val":""},{"key":"shzxbody15","val":""},{"key":"shzxbody16","val":""},{"key":"shzxbody17","val":""},{"key":"shzxbody18","val":""},{"key":"shzxbody19","val":""},{"key":"shzxbody20","val":""}]},"isLoaded":true}
 
+let shzxBODYcookie = {
 
+    shzxBODYVal: shzxBODYlVal,
 
-module.exports = cookie
+}
+
+module.exports = shzxBODYcookie
