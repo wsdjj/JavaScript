@@ -40,7 +40,7 @@ GXRZ = '5.9 完成'
 const $ = Env("搜狐资讯");
 $.idx = ($.idx = ($.getval('shzxSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const notify = $.isNode() ? require("./sendNotify") : ``;
-const COOKIE = $.isNode() ? require("./shzxCOOKIE") : ``;
+const COOKIE = $.isNode() ? require("./shzxCOOKIE2") : ``;
 const logs = 0; // 0关闭日志，1原始日志，2格式化，3格式化且解码，
 notifyttt = 1; // 0为关闭外部推送，1为12 23 点外部推送
 notifyInterval = 2; // 0为关闭通知，1为所有通知，2为12 23 点通知  ， 3为 6 12 18 23 点通知 
